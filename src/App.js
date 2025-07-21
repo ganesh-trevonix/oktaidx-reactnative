@@ -796,25 +796,39 @@ export default function App() {
         }}
       >
         {/* Heading with emoji */}
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: 20,
-          }}
-        >
-          <Text style={{ fontSize: 24, marginRight: 8 }}>🔐</Text>
-          <Text
-            style={{
-              fontSize: 24,
-              fontWeight: 'bold',
-              color: '#333',
-            }}
-          >
-            Login
-          </Text>
-        </View>
+       <View style={{ alignItems: 'center', marginBottom: 40 }}>
+  <Image
+    source={{
+      uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT22tg1gwVFUqeMB4v5MZb9CkQ7USouzBx-8w&s',
+    }}
+    style={{
+      width: 200,
+      height: 50,
+      resizeMode: 'contain',
+      marginBottom: 20,
+    }}
+  />
+
+  <View
+    style={{
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}
+  >
+    <Text style={{ fontSize: 24, marginRight: 10 }}>🔐</Text>
+    <Text
+      style={{
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: '#333',
+      }}
+    >
+      Login
+    </Text>
+  </View>
+</View>
+
         {/* Username input */}
         <TextInput
           placeholder="👤 Username"
