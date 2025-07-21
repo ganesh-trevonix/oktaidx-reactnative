@@ -16,9 +16,12 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 Create or update `.env` file at the root level of your React Native project:
 
 ```env
-OKTA_CLIENT_ID=your-okta-client-id
-OKTA_REDIRECT_URI=com.yourapp://callback
-OKTA_DOMAIN=your-okta-domain.okta.com
+BACKEND_URL='http://10.0.2.2:3000'
+OKTA_CLIENT_ID='your-okta-client-id'
+OKTA_REDIRECT_URI='com.yourapp://callback'
+OKTA_SECOND_TENANT_IDP_ID='your-second-idp-id'
+OKTA_DOMAIN='https://your-okta-domain.okta.com'
+
 
 
  ### ✅ update the .env file inside the backend folder like this:
