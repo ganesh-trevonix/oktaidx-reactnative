@@ -6,14 +6,27 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 
 
-## Step 1: Add Okta Config File details
-const config = {
-  clientId: '<YOUR_OKTA_CLIENT_ID>',
-  redirectUri: 'com.yourapp://callback',  // Use the redirect URI registered in Okta
-  authServerIssuer: 'https://<YOUR_OKTA_DOMAIN>/oauth2/default',
-  idxIssuer: 'https://<YOUR_OKTA_DOMAIN>',
-  scopes: ['openid', 'profile', 'offline_access'],
-};
+
+---
+
+## 🛠 Step 1: Configure Environment Files
+
+### ✅ React Native (`.env` at root)
+
+Create or update `.env` file at the root level of your React Native project:
+
+```env
+OKTA_CLIENT_ID=your-okta-client-id
+OKTA_REDIRECT_URI=com.yourapp://callback
+OKTA_DOMAIN=your-okta-domain.okta.com
+
+
+ ### ✅ update the .env file inside the backend folder like this:
+
+PORT=3000
+OKTA_CLIENT_ID=your-okta-client-id
+OKTA_CLIENT_SECRET=your-client-secret
+OKTA_DOMAIN=your-okta-domain.okta.com
 
 ✅ Ensure your Okta application is of type Native App, and the redirect URI com.yourapp:/callback is registered in Okta.
 
